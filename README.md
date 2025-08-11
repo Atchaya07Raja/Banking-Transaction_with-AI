@@ -3,7 +3,6 @@ End-to-end banking analytics project using SQL for data cleaning and Power BI fo
 
 SQL + Power BI Banking Dashboard with AI-driven DAX KPIs
 
-
 # Banking Transactions Data Cleaning & Visualization  
 
 ## 📌 Project Overview  
@@ -27,11 +26,13 @@ The data was deliberately designed with **null values, errors, and duplicates** 
   - **Transactions**: Transaction ID, account linkage, amount, type, date  
 - Introduced missing data, duplicate records, and inconsistent formats.  
 
-### 2️⃣ Data Cleaning (SQL)  
+### 2️⃣ Data Cleaning & Preparation (SQL)  
 - Removed duplicate rows.  
 - Handled null values via deletion or imputation.  
 - Corrected data types and formatting.  
 - Enforced referential integrity between tables.  
+- **Used `LEFT JOIN`** to merge **Customers**, **Accounts**, and **Transactions** tables — ensuring all customer/account records were retained even if transactions were missing.  
+- Created cleaned, analysis-ready tables for Power BI import.  
 
 ### 3️⃣ Data Visualization (Power BI)  
 - Imported cleaned data into **Power BI**.  
@@ -59,12 +60,12 @@ The data was deliberately designed with **null values, errors, and duplicates** 
 ## 📷 Dashboard Previews  
 
 ### Page 1 – Transaction Trends & Account Insights  
-![Page 1 Dashboard]<img width="1920" height="1080" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d7115132-ede1-4214-924f-7398852673bc" />
+![Page 1 Dashboard]<img width="1920" height="1080" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/8f8e8661-72ee-4ee4-8fd0-4ad5ff00bdd3" />
  
 
 ### Page 2 – Customer & Account Demographics  
-![Page 2 Dashboard]<img width="1920" height="1080" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/0cfad678-6901-4545-aca9-6dc616a33ec1" />
-
+![Page 2 Dashboard]<img width="1920" height="1080" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/144765be-9c9e-4fe7-8121-3e842e3dee56" />
+ 
 
 ---
 
@@ -83,20 +84,21 @@ From the analysis:
 
 This project highlights how **AI-generated synthetic data** can be used for **practical data analytics exercises**.  
 It demonstrates:  
-- **SQL proficiency** for data cleaning  
-- **Power BI skills** for visualization  
-- **DAX knowledge** for KPI development  
+- **SQL proficiency**, including the use of **`LEFT JOIN`** for combining datasets while preserving all base records.  
+- **Power BI dashboarding** for visual storytelling.  
+- **DAX measure creation** for KPI insights.  
 
-The process mirrors real-world **ETL pipelines** — from raw, messy data to interactive reports that aid decision-making.  
+The workflow mirrors a real-world **ETL pipeline** — from raw, messy data to interactive reports that inform decision-making.  
 
 ---
 
 ## 🛠 Tools Used  
-- **SQL** – Data cleaning, transformation, and validation  
+- **SQL** – Data cleaning, transformation, `LEFT JOIN` merging, and validation  
 - **Power BI** – Visualization and dashboard creation  
 - **DAX** – Custom measures and KPI calculation  
 - **Perplexity AI** – Synthetic dataset generation  
 
---- 
+---
+
 ## 📜 License  
-This project uses **synthetic data** and is intended for **educational and demonstration purposes only**.  
+This project uses **synthetic data** and is intended for **educational and demonstration purposes only**. 
